@@ -8,8 +8,8 @@ def call(body) {
   body.delegate = config
   body()
   
-  def JENKINS_UID = config.status
-  def JENKINS_UID = config.attachment
+  def status = config.status
+  def attachment = config.attachment
 
     String tolist="srujan.d87@gmail.com";
     String sub="CI Jenkins ${status}: Job[${env.JOB_NAME}][${env.BUILD_NUMBER}]";
